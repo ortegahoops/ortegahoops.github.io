@@ -58,7 +58,7 @@ body, html {
 		<nav>
 			<ul>
 				{% for page in site.pages %} {% if page.title %}
-				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+				<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
 				{% endif %} {% endfor %}
 				<!-- <li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li> -->
 			</ul>
