@@ -26,9 +26,8 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: blue;
-  font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
+  color: white;
+  text-shadow: 2px 2px blue;
 }
 
 .hero-text button {
@@ -54,8 +53,8 @@ body, html {
   <div class="hero-text">
     <h1 style="font-size:50px">Ortega Hoops</h1>
   </div>
-  <div>
-	  <nav>
+  <div class="container">
+		<nav>
 			<ul>
 				{% for page in site.pages %} {% if page.title %}
 				<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
@@ -65,7 +64,7 @@ body, html {
 			</li>
 			</ul>
 		</nav>
-  </div>
+ </div>
 </div>
 
 </body>
