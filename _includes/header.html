@@ -4,6 +4,7 @@
 			<ul>
 				{% for page in site.pages %} {% if page.title %}
 				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+				<img src="basketball.jpg" alt="Basketball" width="500" height="600">
 				{% endif %} {% endfor %}
 				<!-- <li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li> -->
 			</ul>
